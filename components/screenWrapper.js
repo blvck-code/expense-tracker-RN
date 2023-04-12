@@ -5,7 +5,7 @@ export default function ScreenWrapper({ children }) {
   let statusBarHeight = StatusBar.currentHeight
     ? StatusBar.currentHeight
     : Platform.OS === "ios"
-    ? 50
+    ? 30
     : 0;
   return <View style={{ paddingTop: statusBarHeight }}>{children}</View>;
 }
