@@ -38,7 +38,9 @@ const HomeScreen = () => {
         <Text className={`${colors.heading} font-bold text-3xl shadow-sm`}>
           Expensify
         </Text>
-        <TouchableOpacity className="p-2 px-3 bg-white border-gray-200 rounded-full">
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Welcome")}
+          className="p-2 px-3 bg-white border-gray-200 rounded-full">
           <Text className={colors.heading}>Logout</Text>
         </TouchableOpacity>
       </View>
